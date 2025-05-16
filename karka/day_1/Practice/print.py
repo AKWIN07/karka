@@ -1,0 +1,6 @@
+print("ffgj1")
+#print(2)
+print(123+123)
+print(67*47)
+print(76-6)
+print(90/10)
