@@ -1,0 +1,20 @@
+#main{
+    border: 5px solid black;
+}
+
+#one{
+    text-indent: 10%;
+}
+#two{
+    background-color: black;
+    color: white;
+}
+#three{
+    text-indent: 10%;
+}
+#four{
+    margin-left: 10%;
+}
+#five{
+    margin-left: 10%;
+}
