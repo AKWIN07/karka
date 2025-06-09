@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Courses and Interests</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      padding: 0;
+    }
+    .wrapper {
+      width: 600px;
+      height: 400px;
+      border: 2px solid black;
+      padding: 10px;
+      box-sizing: border-box;
+      overflow: auto;
+    }
+    .container {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+    .left-section {
+      width: 60%;
+    }
+    .right-section {
+      width: 35%;
+      margin-left: 5%;
+    }
+    .section-title {
+      background-color: #cfe2f3;
+      font-weight: bold;
+      padding: 5px;
+      font-size: 18px;
+      margin-top: 10px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 5px;
+    }
+    th, td {
+      border: 1px solid black;
+      padding: 4px;
+      font-size: 12px;
+      text-align: left;
+    }
+    .interests {
+      margin-top: 10px;
+    }
+    .highlight {
+      font-weight: bold;
+    }
+    img {
+      width: 100%;
+      height: auto;
+      border: 1px solid #000;
+    }
+  </style>
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="section-title">Courses</div>
+  <p style="margin: 5px 0;">Here are some courses I've taken:</p>
+
+  <div class="container">
+    <div class="left-section">
+      <table>
+        <thead>
+          <tr>
+            <th>Course Number</th>
+            <th>Course Title</th>
+            <th>Semester Taken</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="#">6.813</a></td>
+            <td>User Interface Design</td>
+            <td>Spring 2014</td>
+          </tr>
+          <tr>
+            <td><a href="#">6.034</a></td>
+            <td>Artificial Intelligence</td>
+            <td>Fall 2013</td>
+          </tr>
+          <tr>
+            <td><a href="#">6.006</a></td>
+            <td>Introduction to Algorithms</td>
+            <td>Fall 2013</td>
+          </tr>
+          <tr>
+            <td colspan="3"><strong>Listener</strong></td>
+          </tr>
+          <tr>
+            <td><a href="#">6.867</a></td>
+            <td>Machine Learning</td>
+            <td>Fall 2013</td>
+          </tr>
+          <tr>
+            <td><a href="#">6.830</a></td>
+            <td>Database Systems</td>
+            <td>Fall 2012</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="right-section">
+      <img src="https://cdn.britannica.com/69/234469-050-B883797B/Rottweiler-dog.jpg" alt="Dog Scientist">
+    </div>
+  </div>
+
+  <div class="interests">
+    <div class="section-title">Interests</div>
+    <p style="margin: 5px 0;">I am interested in <span class="highlight">HCI</span>, memes, and youtube videos.</p>
+  </div>
+</div>
+
+</body>
+</html>
