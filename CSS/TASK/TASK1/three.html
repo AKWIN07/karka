@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Exact Layout</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 20px;
+      background: #f0f0f0;
+      font-family: sans-serif;
+    }
+
+    .wrapper {
+      width: 500px;
+      height: 600px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      background: white;
+    }
+
+    header, nav, footer, main, aside, section {
+      background: #ddd;
+      padding: 10px;
+      text-align: center;
+      border: 1px solid #aaa;
+    }
+
+    .top {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .middle {
+      display: flex;
+      gap: 10px;
+      flex-grow: 1;
+    }
+
+    main {
+      width: 60%;
+      height: 100%;
+    }
+
+    .right-side {
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .right-side aside,
+    .right-side section {
+      flex: none;
+      height: 48.5%; /* not full height */
+    }
+
+    .bottom-aside {
+      height: 50px;
+    }
+
+    footer {
+      height: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="wrapper">
+    <div class="top">
+      <header>&lt;header&gt;</header>
+      <nav>&lt;nav&gt;</nav>
+    </div>
+
+    <div class="middle">
+      <main>&lt;main&gt;</main>
+
+      <div class="right-side">
+        <aside>&lt;aside&gt;</aside>
+        <section>&lt;section&gt;</section>
+      </div>
+    </div>
+
+    <aside class="bottom-aside">&lt;aside&gt;</aside>
+    <footer>&lt;footer&gt;</footer>
+  </div>
+
+</body>
+</html>
