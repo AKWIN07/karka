@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Semantic Layout with Borders</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: sans-serif;
+    }
+
+    .container {
+      display: grid;
+      grid-template-areas:
+        "header"
+        "nav"
+        "main"
+        "footer";
+      grid-template-columns: 1fr;
+      gap: 5px;
+      padding: 10px;
+      height: 400px;
+      width: 40%;
+      border: 2px solid black;
+      margin-left: 20px;
+      margin-top: 20px;
+    }
+
+    header,
+    nav,
+    footer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border: 2px solid #333;
+      padding: 10px;
+
+    }
+
+    main {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      grid-template-rows: auto auto;
+      grid-template-areas:
+        "section aside"
+        "article aside";
+      gap: 5px;
+    }
+
+    section,
+    article,
+    aside {
+      border: 2px solid #333;
+      padding: 10px;
+    }
+
+    header {
+      grid-area: header;
+    }
+
+    nav {
+      grid-area: nav;
+    }
+
+    footer {
+      grid-area: footer;
+    }
+
+    section {
+      grid-area: section;
+    }
+
+    article {
+      grid-area: article;
+    }
+
+    aside {
+      grid-area: aside;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>&lt;header&gt;</header>
+    <nav>&lt;nav&gt;</nav>
+    <main>
+      <section>&lt;section&gt;</section>
+      <aside>&lt;aside&gt;</aside>
+      <article>&lt;article&gt;</article>
+    </main>
+    <footer>&lt;footer&gt;</footer>
+  </div>
+</body>
+
+</html>

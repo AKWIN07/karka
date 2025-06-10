@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container{
+      display: flex;
+      flex-direction: column;
+      border: 2px solid black;
+      height: 500px;
+      width: 500px;
+      font-style: italic;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: rgb(51, 50, 50);
+      font-size: medium;
+    }
+    .header,.nav{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-bottom: 2px solid black;
+      height: 50px;
+    }
+    .main{
+      display: flex;
+      height: 300px;
+      border-bottom: 2px solid black;
+    }
+    .sec1{
+      display: flex;
+      height: auto;
+      width: 30%;
+      border-right: 2px solid black;
+      justify-content: center;
+      align-items: center;
+    }
+    .sec2{
+      display: flex;
+      height: auto;
+      width: 70%;
+      justify-content: center;
+      align-items: center;
+    }
+    .Footer{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100px;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">Header Section</div>
+    <div class="nav">Navigation Bar</div>
+    <div class="main">
+      <div class="sec1">Index</div>
+      <div class="sec2">Content Section</div>
+    </div>
+    <div class="Footer">Footer</div>
+  </div>
+  
+</body>
+</html>
