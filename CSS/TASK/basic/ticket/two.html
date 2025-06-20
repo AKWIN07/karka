@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .one {
+            display: flex;
+            flex-direction: row;
+            height: 355px;
+            width: 85%;
+            background-color: rgb(189, 83, 83);
+            border-radius: 15px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .child1 {
+            display: flex;
+            flex-direction: column;
+            height: 355px;
+            width: 70%;
+            color: white;
+            background-color: rgb(223, 216, 216);
+            justify-content: start;
+            background-image: url('https://media.istockphoto.com/id/1485424068/vector/world-map-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=FfRJAk0f0XWCMl1PjdGRVQSdUsVHpDjyfBBQE9L8GWg=');
+            background-size: cover;
+            background-repeat: no-repeat;
+        
+        }
+
+        .child2 {
+
+            display: flex;
+            flex-direction: column;
+            height: 355px;
+            width: 30%;
+            background-color: rgb(51, 255, 0);
+        }
+
+
+        .head {
+            display: flex;
+            background-color: rgba(149, 197, 236, 0.596);
+            height: 60px;
+            width: 100%;
+            flex-direction: column;
+        }
+
+        .head1 {
+            display: flex;
+            background-color: rgb(10, 12, 102);
+            height: 60px;
+            width: 100%;
+        }
+
+        .body1 {
+            display: flex;
+            justify-content: space-evenly;
+            height: 20px;
+            width: 100%;
+        }
+
+        .body2 {
+            display: flex;
+            justify-content: space-evenly;
+            height: 30px;
+            width: 100%;
+        }
+
+        .body3 {
+            display: flex;
+            justify-content: space-evenly;
+            height: 50px;
+            width: 100%;
+        }
+
+        .body4 {
+            display: flex;
+            flex-direction: column;
+            height: 250px;
+            width: 100%;
+            background-color: rgb(255, 255, 255);
+        }
+
+        .body5 {
+            display: flex;
+            flex-direction: column;
+            height: 55px;
+            width: 100%;
+            background-color: rgb(255, 255, 255);
+        }
+
+        .dot1 {
+            height: 10px;
+            width: 10px;
+            border-radius: 50px;
+            background-color: aliceblue;
+            position: absolute;
+            right: 340px;
+            top: -5px;
+        }
+
+        .dot2 {
+            height: 10px;
+            width: 10px;
+            border-radius: 50px;
+            background-color: aliceblue;
+            position: absolute;
+            right: 340px;
+            top: 10px;
+        }
+
+        .dot3 {
+            height: 10px;
+            width: 10px;
+            border-radius: 50px;
+            background-color: aliceblue;
+            position: absolute;
+            right: 340px;
+            top: 25px;
+        }
+
+        .dot4 {
+            height: 10px;
+            width: 10px;
+            border-radius: 50px;
+            background-color: aliceblue;
+            position: absolute;
+            right: 340px;
+            top: 40px;
+        }
+
+        .dot5 {
+            height: 10px;
+            width: 10px;
+            border-radius: 50px;
+            background-color: aliceblue;
+            position: absolute;
+            right: 340px;
+            top: 55px;
+        }
+
+        .dot6 {
+            height: 10px;
+            width: 10px;
+            border-radius: 50px;
+            background-color: aliceblue;
+            position: absolute;
+            right: 340px;
+            top: 70px;
+        }
+
+        .dot7 {
+            height: 10px;
+            width: 10px;
+            border-radius: 50px;
+            background-color: aliceblue;
+            position: absolute;
+            right: 340px;
+            top: 85px;
+        }
+
+        .dot8 {
+            height: 10px;
+            width: 10px;
+            border-radius: 50px;
+            background-color: aliceblue;
+            position: absolute;
+            right: 340px;
+            top: 100px;
+        }
+
+        .dot9 {
+            height: 10px;
+            width: 10px;
+            border-radius: 50px;
+            background-color: aliceblue;
+            position: absolute;
+            right: 340px;
+            top: 115px;
+        }
+
+        .dot10 {
+            height: 10px;
+            width: 10px;
+            border-radius: 50px;
+            background-color: aliceblue;
+            position: absolute;
+            right: 340px;
+            top: 130px;
+        }
+
+        .dot11 {
+            height: 10px;
+            width: 10px;
+            border-radius: 50px;
+            background-color: aliceblue;
+            position: absolute;
+            right: 340px;
+            top: 145px;
+        }
+
+        .dot12 {
+            height: 10px;
+            width: 10px;
+            border-radius: 50px;
+            background-color: aliceblue;
+            position: absolute;
+            right: 340px;
+            top: 160px;
+        }
+
+        .dot13 {
+            height: 10px;
+            width: 10px;
+            border-radius: 50px;
+            background-color: aliceblue;
+            position: absolute;
+            right: 340px;
+            top: 175px;
+        }
+
+        .dot14 {
+            height: 10px;
+            width: 10px;
+            border-radius: 50px;
+            background-color: aliceblue;
+            position: absolute;
+            right: 340px;
+            top: 190px;
+        }
+
+        .dot15 {
+            height: 10px;
+            width: 10px;
+            border-radius: 50px;
+            background-color: aliceblue;
+            position: absolute;
+            right: 340px;
+            top: 205px;
+        }
+
+        .dot16 {
+            height: 10px;
+            width: 10px;
+            border-radius: 50px;
+            background-color: aliceblue;
+            position: absolute;
+            right: 340px;
+            top: 220px;
+        }
+
+        .dot17 {
+            height: 10px;
+            width: 10px;
+            border-radius: 50px;
+            background-color: aliceblue;
+            position: absolute;
+            right: 340px;
+            top: 235px;
+        }
+
+        .dot18 {
+            height: 10px;
+            width: 10px;
+            border-radius: 50px;
+            background-color: aliceblue;
+            position: absolute;
+            right: 340px;
+            top: 250px;
+        }
+
+        .dot19 {
+            height: 10px;
+            width: 10px;
+            border-radius: 50px;
+            background-color: aliceblue;
+            position: absolute;
+            right: 340px;
+            top: 265px;
+        }
+
+        .dot20 {
+            height: 10px;
+            width: 10px;
+            border-radius: 50px;
+            background-color: aliceblue;
+            position: absolute;
+            right: 340px;
+            top: 280px;
+        }
+
+        .dot21 {
+            height: 10px;
+            width: 10px;
+            border-radius: 50px;
+            background-color: aliceblue;
+            position: absolute;
+            right: 340px;
+            top: 295px;
+        }
+
+        .dot22 {
+            height: 10px;
+            width: 10px;
+            border-radius: 50px;
+            background-color: aliceblue;
+            position: absolute;
+            right: 340px;
+            top: 310px;
+        }
+
+        .dot23 {
+            height: 10px;
+            width: 10px;
+            border-radius: 50px;
+            background-color: aliceblue;
+            position: absolute;
+            right: 340px;
+            top: 325px;
+        }
+
+        .dot24 {
+            height: 10px;
+            width: 10px;
+            border-radius: 50px;
+            background-color: aliceblue;
+            position: absolute;
+            right: 340px;
+            top: 340px;
+        }
+
+        .body6 {
+            display: flex;
+            justify-content: space-evenly;
+            height: 30px;
+            width: 100%;
+        }
+
+        .body7 {
+            display: flex;
+            justify-content: space-evenly;
+            height: 30px;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="one">
+        <div class="child1">
+
+            <div class="dot1"></div>
+            <div class="dot2"></div>
+            <div class="dot3"></div>
+            <div class="dot4"></div>
+            <div class="dot5"></div>
+            <div class="dot6"></div>
+            <div class="dot7"></div>
+            <div class="dot8"></div>
+            <div class="dot9"></div>
+            <div class="dot10"></div>
+            <div class="dot11"></div>
+            <div class="dot12"></div>
+            <div class="dot13"></div>
+            <div class="dot14"></div>
+            <div class="dot15"></div>
+            <div class="dot16"></div>
+            <div class="dot17"></div>
+            <div class="dot18"></div>
+            <div class="dot19"></div>
+            <div class="dot20"></div>
+            <div class="dot21"></div>
+            <div class="dot22"></div>
+            <div class="dot23"></div>
+            <div class="dot24"></div>
+            <div class="head">
+                <div style="font-size: 30px; position: absolute; left: 60px; top: 5px;">BOARDING PASS</div>
+                <div style="position: absolute; left: 60px; top: 30px;">AIRLINE COMPANY</div>
+                <div style="position: absolute; top: 50px;"></div>
+            </div>
+            <div class="body1" style=" color: gray; ">
+                <i class="fa fa-barcode"
+                    style="font-size:50px;transform: rotate(90deg); color: black; position: absolute; top: 40px; left: 10px;"></i>
+                <i class="fa fa-barcode"
+                    style="font-size:50px;transform: rotate(90deg); color: black; position: absolute; top: 90px; left: 10px;"></i>
+                <i class="fa fa-barcode"
+                    style="font-size:50px;transform: rotate(90deg); color: black; position: absolute; top: 140px; left: 10px;"></i>
+                <i class="fa fa-barcode"
+                    style="font-size:50px;transform: rotate(90deg); color: black; position: absolute; top: 1800px; left: 10px;"></i>
+                <i class="fa fa-barcode"
+                    style="font-size:50px;transform: rotate(90deg); color: black; position: absolute; top: 200px; left: 10px;"></i>
+                <i class="fa fa-barcode"
+                    style="font-size:50px;transform: rotate(90deg); color: black; position: absolute; top: 240px; left: 10px;"></i>
+                <h1 style="font-size: small; position: absolute; top: 60px; left: 60px; ">PASSENGER</h1>
+                <h1 style="font-size: small; position: absolute; top: 60px; left: 300px;">FLIGHT</h1>
+                <h1 style="font-size: small; position: absolute; top: 60px; left: 500px;">DATE</h1>
+                <h1 style="font-size: small; position: absolute; top: 60px; left: 750px;">SEAT</h1>
+            </div>
+            <div class="body2" style=" color: black;">
+                <h1 style="font-size: medium; position: absolute; top: 80px; left: 60px;">JHONDOE</h1>
+                <h1 style="font-size: medium; position: absolute; top: 80px; left: 300px">AV1A7</h1>
+                <h1 style="font-size: medium; position: absolute; top: 80px; left: 500px">27JUN2022</h1>
+                <h1 style="font-size: medium; position: absolute; top: 80px; left: 750px">4B</h1>
+            </div>
+            <div class="body3" style="margin-left: 60px; color: black; ">
+                <h1 style="font-size: 70px; position: absolute; top: 100px; left: 100px;">LONDON</h1>
+                <i class="fa fa-plane"
+                    style="font-size:70px; position: absolute;top: 155px; left: 430px; transform: rotate(45deg);"></i>
+                <h1 style="font-size: 70px; position: absolute; top: 100px; left: 500px">TOKYO</h1>
+            </div>
+            <div class="body6" style="margin-left: 60px; color: red;">
+                <h1 style="position: absolute; top: 250px; left: 60px; font-size: 20px;">GATE</h1>
+                <h1 style="position: absolute; top: 250px; left: 300px; font-size: 20px;">BOARDING TIME</h1>
+            </div>
+            <div class="body7" style="color: black;">
+                <h1 style="position: absolute; top: 270px; left: 60px; font-size: 20px;">25A</h1>
+                <h1 style="position: absolute; top: 270px; left: 300px; font-size: 20px;">06:30</h1>
+            </div>
+
+
+        </div>
+        <div class="child2">
+            <div class="head1" style="color: white; ">
+                <h1 style="font-size: 30px; position: absolute; right: 200px; top: -10px ; ">LONDEN</h1>
+                <i class="fa fa-plane"
+                    style="font-size:30px; position: absolute; right: 170px; top: 13px; transform: rotate(45deg);"></i>
+                <h1 style="font-size: 30px; position: absolute; right: 50px; top: -10px ; ">TOKYO</h1>
+            </div>
+            <div class="body4">
+                <h1 style="color: grey;font-size: medium;  position: absolute; right:240px; top: 60px;">PASSENGER</h1>
+                <h1 style="color: rgb(0, 0, 0);font-size: medium; position: absolute; right:250px; top: 80px; ">JHON DOE
+                </h1>
+                <h1 style="color: gray;font-size: medium; position: absolute; right: 265px; top: 120px; ">FLIGHT</h1>
+                <h1 style="color: black;font-size: medium; position: absolute; right:270px; top: 140px; ">AV1A7</h1>
+                <h1 style="color: gray;font-size: medium; position: absolute; right:160px; top: 120px; ">SEAT</h1>
+                <h1 style="color: black;font-size: medium; position: absolute; right:170px; top: 140px; ">4B</h1>
+                <h1 style="color: gray;font-size: medium; position: absolute; right:275px; top: 180px; ">DATE</h1>
+                <h1 style="color: black;font-size: medium; position: absolute; right:245px; top: 200px; ">27JUN2022</h1>
+                <h1 style="color: gray;font-size: medium; position: absolute; right:275px; top: 240px; ">GATE</h1>
+                <h1 style="color: black;font-size: medium; position: absolute; right:275px; top: 260px; ">25GA</h1>
+            </div>
+            <div class="body5">
+                <i class="fa fa-barcode" style="font-size:36px; position: absolute; bottom:20px; right: 280px;"></i>
+                <i class="fa fa-barcode" style="font-size:36px; position: absolute; bottom:20px; right: 240px;"></i>
+                <i class="fa fa-barcode" style="font-size:36px; position: absolute; bottom:20px; right: 200px;"></i>
+                <i class="fa fa-barcode" style="font-size:36px; position: absolute; bottom:20px; right: 160px;"></i>
+                <i class="fa fa-barcode" style="font-size:36px; position: absolute; bottom:20px; right: 120px;"></i>
+                <i class="fa fa-barcode" style="font-size:36px; position: absolute; bottom:20px; right: 80px;"></i>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
